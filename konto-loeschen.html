@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konto löschen – Spenduo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0D1B2E;
+      color: #C0D0E0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+      color: #E8F0FC;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #E8F0FC;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #8A9BB5;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #E8F0FC;
+      margin-bottom: 16px;
+    }
+
+    .steps {
+      list-style: none;
+      margin-bottom: 36px;
+    }
+
+    .steps li {
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .steps li::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 24px;
+      height: 24px;
+      background: #162840;
+      border: 1px solid #253A54;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #5B8DEF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .data-section {
+      background: #162840;
+      border: 1px solid #253A54;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 36px;
+    }
+
+    .data-section h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #E8F0FC;
+      margin-bottom: 12px;
+    }
+
+    .data-list {
+      list-style: none;
+      font-size: 14px;
+    }
+
+    .data-list li {
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .data-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: #5B8DEF;
+    }
+
+    .data-section + .data-section {
+      margin-top: -20px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #6B7F99;
+      margin-bottom: 36px;
+    }
+
+    .contact {
+      background: #162840;
+      border: 1px solid #253A54;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .contact h2 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .contact p {
+      font-size: 14px;
+    }
+
+    .contact a {
+      color: #5B8DEF;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 32px 18px 48px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Spenduo</div>
+
+    <h1>Konto löschen</h1>
+    <p class="intro">
+      Du kannst dein Spenduo-Konto jederzeit löschen.
+      Dabei werden alle deine persönlichen Daten unwiderruflich entfernt.
+    </p>
+
+    <h2>So löschst du dein Konto</h2>
+    <ol class="steps">
+      <li data-step="1">Öffne Spenduo und gehe zum Tab <strong>Mehr</strong></li>
+      <li data-step="2">Tippe auf <strong>Rechtliches &amp; Datenschutz</strong></li>
+      <li data-step="3">Wähle <strong>Konto und Daten löschen</strong></li>
+      <li data-step="4">Bestätige die Löschung mit deinem Passwort</li>
+    </ol>
+
+    <div class="data-section">
+      <h3>Folgende Daten werden gelöscht</h3>
+      <ul class="data-list">
+        <li>Dein Benutzerkonto (E-Mail-Adresse, Name)</li>
+        <li>Alle von dir erstellten Transaktionen</li>
+        <li>Deine Mitgliedschaft in Haushalten</li>
+      </ul>
+    </div>
+
+    <div class="data-section">
+      <h3>Daten, die erhalten bleiben</h3>
+      <ul class="data-list">
+        <li>Der Haushalt und dessen Daten bleiben für andere Mitglieder erhalten</li>
+        <li>Anonymisierte, aggregierte Nutzungsdaten (Analytics)</li>
+      </ul>
+    </div>
+
+    <p class="note">
+      Die Löschung erfolgt sofort und kann nicht rückgängig gemacht werden.
+      Bist du das einzige Mitglied eines Haushalts, wird der gesamte Haushalt mit allen Daten gelöscht.
+    </p>
+
+    <div class="contact">
+      <h2>Du brauchst Hilfe?</h2>
+      <p>
+        Falls du dein Konto nicht selbst löschen kannst, schreib uns eine E-Mail an
+        <a href="mailto:support@spenduo.com">support@spenduo.com</a> —
+        wir löschen dein Konto innerhalb von 3 Werktagen.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
